@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cine Play — Baixe o App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#ff5a5f;--muted:#9aa4b2;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    body{margin:0;background:linear-gradient(180deg,#071029 0%, #071a2a 60%);color:#e6eef6}
+    .container{max-width:1100px;margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#ff8a80,#ff5a5f);display:flex;align-items:center;justify-content:center;font-weight:800;color:white}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:0;color:var(--muted)}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:20px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+
+    .hero-left h2{font-size:32px;margin:0 0 8px}
+    .hero-left p{color:var(--muted);margin-bottom:18px}
+
+    .features{display:flex;gap:10px;flex-wrap:wrap}
+    .feat{background:var(--glass);padding:10px 12px;border-radius:10px;font-size:14px;color:#dfe9f5}
+
+    .apk-btn{display:block;background:linear-gradient(90deg,#ff8a80,#ff5a5f);color:white;padding:14px 18px;border-radius:12px;text-decoration:none;font-weight:700;margin:10px 0;text-align:center}
+    .store{display:inline-block;margin-top:8px;padding:8px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.05);font-weight:600;color:var(--muted);text-decoration:none}
+    .small{font-size:13px;color:var(--muted)}
+
+    .phone-mock{background:linear-gradient(180deg,#071a2a,#0b2030);border-radius:18px;padding:18px;display:flex;flex-direction:column;align-items:center;gap:12px}
+    .screen{width:320px;height:580px;background:#061420;border-radius:12px;border:6px solid rgba(255,255,255,0.02);overflow:hidden}
+    .s-top{display:flex;justify-content:space-between;padding:12px;color:var(--muted)}
+    .poster-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;padding:12px}
+    .poster{height:128px;border-radius:8px;background:linear-gradient(180deg,#111827,#061226);display:flex;align-items:end;padding:8px;color:#fff;font-weight:700}
+
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
+
+    footer{margin-top:30px;color:var(--muted);text-align:center;padding:20px 0}
+
+    /* responsive */
+    @media(max-width:980px){.hero{grid-template-columns:1fr}.phone-mock{justify-content:flex-start}.screen{width:100%;height:420px}}
+    @media(max-width:520px){.poster{height:110px}.screen{height:380px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">CP</div>
+        <div>
+          <h1>Cine Play</h1>
+          <p class="lead">A sua app de filmes — rápida, leve e com centenas de títulos.</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#features" style="color:var(--muted);text-decoration:none;margin-right:12px">Funcionalidades</a>
+        <a href="#download" style="color:var(--muted);text-decoration:none">Baixar</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left card">
+        <h2>Assista seus filmes favoritos offline e online</h2>
+        <p>Baixe o aplicativo Cine Play e tenha acesso a uma biblioteca extensa, atualizações diárias e reprodução em alta definição — tudo numa app leve e segura.</p>
+
+        <div class="features">
+          <div class="feat">✓ Reproduz em HD</div>
+          <div class="feat">✓ Download para assistir offline</div>
+          <div class="feat">✓ Interface leve</div>
+          <div class="feat">✓ Atualizações semanais</div>
+        </div>
+      </div>
+
+      <div class="card phone-mock">
+        <div style="font-weight:700">Preview da app</div>
+        <div class="screen">
+          <div class="s-top">
+            <span>Hoje</span>
+            <span class="small">Cine Play</span>
+          </div>
+          <div class="poster-grid">
+            <div class="poster">Ação</div>
+            <div class="poster">Drama</div>
+            <div class="poster">Comédia</div>
+            <div class="poster">Animação</div>
+          </div>
+        </div>
+
+        <div style="width:100%;display:flex;gap:10px;justify-content:space-between;margin-top:12px">
+          <div style="flex:1">
+            <div style="font-weight:700">Versão</div>
+            <div class="small">v1.0.0</div>
+          </div>
+          <div style="flex:1;text-align:right">
+            <div style="font-weight:700">Downloads</div>
+            <div class="small">0+</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="about">
+      <div class="card">
+        <h3>Por que escolher Cine Play?</h3>
+        <ul style="color:var(--muted);line-height:1.6">
+          <li>Catálogo atualizado diariamente com novos filmes e séries.</li>
+          <li>Modo offline para assistir sem internet.</li>
+          <li>Player próprio com legendas e controle de qualidade.</li>
+          <li>Design leve pensado para aparelhos de baixa memória.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Requisitos</h3>
+        <p style="color:var(--muted);line-height:1.6">Android 5.0 ou superior, 30 MB livres para instalação. Recomendado Wi-Fi para downloads.</p>
+        <h4 style="margin-top:12px">O que está incluso</h4>
+        <div class="small">Biblioteca, player, downloads, favoritos, perfil do usuário.</div>
+      </div>
+    </section>
+
+    <section id="download" style="margin-top:18px" class="card">
+      <h3>Baixar Cine Play</h3>
+      <p class="small">Escolha a versão que deseja baixar e siga as instruções no seu dispositivo para instalar.</p>
+      <div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap">
+        <a class="apk-btn" href="https://download1474.mediafire.com/utcod99nswvg0m6JD--fn9fY7dInKGDGsznKI7HeDEgWiuSTs5k2fL7ewdNMm7SHRe5qWSKqVt9padVOmmWGoBEgMvRhMM3FnYjsJkxp6-Q43vKRLN5VVWrJv6EmE-wUUZ0rzQGNiG3cff9BJrTnIs03lJv6cS72rGEAz55Km26Im6w/gmxqdfqin6ovzhj/Cine+Play.apk">Download Premium</a>
+        <a class="apk-btn" href="https://download1474.mediafire.com/utcod99nswvg0m6JD--fn9fY7dInKGDGsznKI7HeDEgWiuSTs5k2fL7ewdNMm7SHRe5qWSKqVt9padVOmmWGoBEgMvRhMM3FnYjsJkxp6-Q43vKRLN5VVWrJv6EmE-wUUZ0rzQGNiG3cff9BJrTnIs03lJv6cS72rGEAz55Km26Im6w/gmxqdfqin6ovzhj/Cine+Play.apk">Download Padrão</a>
+      </div>
+
+      <div style="margin-top:14px;color:var(--muted)">
+        <h4 style="margin:0 0 8px 0">FAQ</h4>
+        <div style="line-height:1.5">
+          <strong>É seguro instalar?</strong>
+          <p class="small" style="margin:6px 0 12px;">Sim — faça download apenas do link oficial e permita instalações de fontes desconhecidas apenas quando necessário.</p>
+          <strong>Preciso pagar?</strong>
+          <p class="small" style="margin:6px 0 0;">Não — a versão básica é gratuita. Compras dentro do app são opcionais.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="suporte" style="margin-top:18px" class="card">
+      <h3>Suporte</h3>
+      <p class="small">Se precisar de ajuda, entre em contato: <br>
+        <a href="mailto:nyvdeveloper@gmail.com" style="color:#ff5a5f">nyvdeveloper@gmail.com</a></p>
+    </section>
+
+    <footer>
+      <div class="small">© Cine Play — Todos os direitos reservados. Desenvolvido profissionalmente.</div>
+    </footer>
+  </div>
+</body>
+</html>
