@@ -1,182 +1,352 @@
-<!doctype html>
-<html lang="pt">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Cine Play — Baixe o App</title>
-  <meta name="description" content="Cine Play - Filmes e animes grátis para assistir online.">
-  <meta name="keywords" content="Cine Play, filmes, animes, assistir online, cineplay">
-  <meta name="author" content="Cine Play">
-
-  <!-- Meta de verificação do Google -->
-  <meta name="google-site-verification" content="m24GzPTV3rzPbmEGdLauO1sqD1FTFSDOOi-UX8nesqs" />
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GDMJTB6F48"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-GDMJTB6F48');
-  </script>
-
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-WSBXSJFV');</script>
-  <!-- End Google Tag Manager -->
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <style>
-    :root{--bg:#0f1724;--card:#0b1220;--accent:#ff5a5f;--muted:#9aa4b2;--glass:rgba(255,255,255,0.03)}
-    *{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial}
-    body{margin:0;background:linear-gradient(180deg,#071029 0%, #071a2a 60%);color:#e6eef6}
-    .container{max-width:1100px;margin:36px auto;padding:24px}
-    header{display:flex;align-items:center;justify-content:space-between}
-    .brand{display:flex;gap:12px;align-items:center}
-    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#ff8a80,#ff5a5f);display:flex;align-items:center;justify-content:center;font-weight:800;color:white}
-    h1{margin:0;font-size:20px}
-    p.lead{margin:0;color:var(--muted)}
-
-    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:28px}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:20px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 6px 18px rgba(2,6,23,0.6)}
-
-    .hero-left h2{font-size:32px;margin:0 0 8px}
-    .hero-left p{color:var(--muted);margin-bottom:18px}
-
-    .features{display:flex;gap:10px;flex-wrap:wrap}
-    .feat{background:var(--glass);padding:10px 12px;border-radius:10px;font-size:14px;color:#dfe9f5}
-
-    .apk-btn{display:block;background:linear-gradient(90deg,#ff8a80,#ff5a5f);color:white;padding:14px 18px;border-radius:12px;text-decoration:none;font-weight:700;margin:10px 0;text-align:center}
-    .store{display:inline-block;margin-top:8px;padding:8px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.05);font-weight:600;color:var(--muted);text-decoration:none}
-    .small{font-size:13px;color:var(--muted)}
-
-    .phone-mock{background:linear-gradient(180deg,#071a2a,#0b2030);border-radius:18px;padding:18px;display:flex;flex-direction:column;align-items:center;gap:12px}
-    .screen{width:320px;height:580px;background:#061420;border-radius:12px;border:6px solid rgba(255,255,255,0.02);overflow:hidden}
-    .s-top{display:flex;justify-content:space-between;padding:12px;color:var(--muted)}
-    .poster-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;padding:12px}
-    .poster{height:128px;border-radius:8px;background:linear-gradient(180deg,#111827,#061226);display:flex;align-items:end;padding:8px;color:#fff;font-weight:700}
-
-    .about{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
-
-    footer{margin-top:30px;color:var(--muted);text-align:center;padding:20px 0}
-
-    /* responsive */
-    @media(max-width:980px){.hero{grid-template-columns:1fr}.phone-mock{justify-content:flex-start}.screen{width:100%;height:420px}}
-    @media(max-width:520px){.poster{height:110px}.screen{height:380px}}
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Earn Online — Get Started</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0f1724;
+    --card:#0b1220;
+    --accent:#ff6b35;
+    --accent-2:#ff9a57;
+    --muted:#9aa4b2;
+    --success:#16a34a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;background:
+    radial-gradient(1000px 400px at 10% 10%, rgba(255,107,53,0.06), transparent),
+    linear-gradient(180deg,#071023 0%, #071426 100%); color:#e6eef8; min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px;}
+  .wrap{width:100%;max-width:760px;padding:28px;border-radius:16px;background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)); box-shadow:0 8px 40px rgba(2,6,23,0.7); border:1px solid rgba(255,255,255,0.03); display:grid; grid-template-columns:1fr 360px; gap:20px; align-items:start;}
+  @media(max-width:880px){ .wrap{grid-template-columns:1fr; padding:20px} .right{order:2} .left{order:1} }
+  .brand{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+  .logo{width:46px;height:46px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2)); display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff}
+  h1{margin:6px 0 8px;font-size:20px}
+  p.lead{margin:0;color:var(--muted)}
+  .left{padding:6px 12px}
+  .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent); padding:18px;border-radius:12px; margin-top:16px; border:1px solid rgba(255,255,255,0.02)}
+  label{display:block;color:var(--muted);font-size:13px;margin-bottom:6px}
+  input[type="text"]{width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff;font-size:15px}
+  .buttons{display:flex;gap:12px;margin-top:12px;flex-wrap:wrap}
+  .btn{flex:1;min-width:140px;padding:12px 14px;border-radius:10px;border:none;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:8px;justify-content:center}
+  .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:#071426; box-shadow:0 6px 18px rgba(255,107,53,0.12)}
+  .btn-white{background:rgba(255,255,255,0.06);color:#fff;border:1px solid rgba(255,255,255,0.04)}
+  .small{font-size:13px;padding:8px 10px}
+  .right{padding:12px}
+  .progress-wrap{background:rgba(255,255,255,0.03);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+  .progress{height:26px;background:rgba(255,255,255,0.04);border-radius:999px;overflow:hidden;position:relative}
+  .bar{height:100%;width:0%;background:linear-gradient(90deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:#071426;font-weight:700;transition:width 420ms cubic-bezier(.2,.9,.2,1)}
+  .meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px;color:var(--muted);font-size:13px}
+  .note{font-size:13px;color:var(--muted);margin-top:12px}
+  .final-actions{display:flex;gap:10px;margin-top:14px}
+  .link-button{display:inline-block;padding:12px 14px;border-radius:10px;background:#fff;color:#071426;text-decoration:none;font-weight:700}
+  .disabled{opacity:0.5;pointer-events:none}
+  footer{margin-top:16px;color:var(--muted);font-size:13px}
+  .flag{font-size:12px;padding:6px 10px;background:rgba(255,255,255,0.02);border-radius:999px}
+</style>
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSBXSJFV"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-  <div class="container">
-    <header>
+  <div class="wrap" role="main" aria-labelledby="title">
+    <div class="left">
       <div class="brand">
-        <div class="logo">CP</div>
+        <div class="logo">GO</div>
         <div>
-          <h1>Cine Play</h1>
-          <p class="lead">A sua app de filmes — rápida, leve e com centenas de títulos.</p>
-        </div>
-      </div>
-      <nav>
-        <a href="#features" style="color:var(--muted);text-decoration:none;margin-right:12px">Funcionalidades</a>
-        <a href="#download" style="color:var(--muted);text-decoration:none">Baixar</a>
-      </nav>
-    </header>
-
-    <section class="hero">
-      <div class="hero-left card">
-        <h2>Assista seus filmes favoritos offline e online</h2>
-        <p>Baixe o aplicativo Cine Play e tenha acesso a uma biblioteca extensa, atualizações diárias e reprodução em alta definição — tudo numa app leve e segura.</p>
-
-        <div class="features">
-          <div class="feat">✓ Reproduz em HD</div>
-          <div class="feat">✓ Download para assistir offline</div>
-          <div class="feat">✓ Interface leve</div>
-          <div class="feat">✓ Atualizações semanais</div>
+          <div style="font-size:13px;color:var(--muted)">Welcome to</div>
+          <div style="font-weight:700">Earn Online — Fast Rewards</div>
         </div>
       </div>
 
-      <div class="card phone-mock">
-        <div style="font-weight:700">Preview da app</div>
-        <div class="screen">
-          <div class="s-top">
-            <span>Hoje</span>
-            <span class="small">Cine Play</span>
+      <h1 id="title">Loading...</h1>
+      <p class="lead" id="subtitle">Please wait...</p>
+
+      <div class="card" style="margin-top:18px;">
+        <label id="numLabel">Phone number</label>
+        <input id="numberInput" type="text" inputmode="numeric" placeholder="+258 84 123 4567" />
+
+        <div style="display:flex;align-items:center;gap:10px;margin-top:10px">
+          <button id="whatsappBtn" class="btn btn-primary" title="Share on WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="vertical-align:middle"><path d="M21 12c0 4.97-4.03 9-9 9a8.93 8.93 0 0 1-4.68-1.34L3 21l1.34-3.32A8.93 8.93 0 0 1 3 12c0-4.97 4.03-9 9-9s9 4.03 9 9z" stroke="#071426" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.2 11.2c.2.6.9 1.3 1 1.4.2.2.3.3.6.2.2 0 1.1-.4 1.7-.6.6-.2.9-.1 1.1.1.2.2.1.6 0 .9-.1.3-.6 1.2-1.1 1.6-.5.4-.9.5-1.6.9-.7.4-1.4.2-2.1-.4-.7-.6-1.6-1.7-2-2.4-.4-.8-.1-1.3.2-1.6.4-.3 1-.3 1.5 0z" fill="#071426"/></svg>
+            <span style="margin-left:6px" id="whText">Share</span>
+          </button>
+
+          <button id="fbBtn" class="btn btn-white" title="Share on Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="vertical-align:middle"><path d="M18 2h-3a4 4 0 0 0-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h2V2z" fill="currentColor"/></svg>
+            <span id="fbText">Share</span>
+          </button>
+        </div>
+
+        <div class="note" id="shareNote">Share to increase your progress. Each successful share adds 10%.</div>
+      </div>
+
+      <footer>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div class="flag" id="detectedCountry">Detecting country...</div>
+          <div style="font-size:12px;color:var(--muted)">Secure • No downloads • 24/7 support</div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="right">
+      <div class="progress-wrap">
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div style="display:flex;flex-direction:column">
+            <div style="font-size:13px;color:var(--muted)">Your Progress</div>
+            <div style="font-weight:700;font-size:18px" id="progLabel">0%</div>
           </div>
-          <div class="poster-grid">
-            <div class="poster">Ação</div>
-            <div class="poster">Drama</div>
-            <div class="poster">Comédia</div>
-            <div class="poster">Animação</div>
+          <div style="text-align:right">
+            <div style="font-size:13px;color:var(--muted)">Bonus ready</div>
+            <div style="font-weight:700">Instant Reward</div>
           </div>
         </div>
 
-        <div style="width:100%;display:flex;gap:10px;justify-content:space-between;margin-top:12px">
-          <div style="flex:1">
-            <div style="font-weight:700">Versão</div>
-            <div class="small">v1.0.0</div>
-          </div>
-          <div style="flex:1;text-align:right">
-            <div style="font-weight:700">Downloads</div>
-            <div class="small">0+</div>
-          </div>
+        <div style="margin-top:14px" class="progress">
+          <div class="bar" id="bar">0%</div>
         </div>
-      </div>
-    </section>
-    
-    <section id="features" class="about">
-      <div class="card">
-        <h3>Por que escolher Cine Play?</h3>
-        <ul style="color:var(--muted);line-height:1.6">
-          <li>Catálogo atualizado diariamente com novos filmes e séries.</li>
-          <li>Modo offline para assistir sem internet.</li>
-          <li>Player próprio com legendas e controle de qualidade.</li>
-          <li>Design leve pensado para aparelhos de baixa memória.</li>
-        </ul>
-      </div>
 
-      <div class="card">
-        <h3>Requisitos</h3>
-        <p style="color:var(--muted);line-height:1.6">Android 5.0 ou superior, 30 MB livres para instalação. Recomendado Wi-Fi para downloads.</p>
-        <h4 style="margin-top:12px">O que está incluso</h4>
-        <div class="small">Biblioteca, player, downloads, favoritos, perfil do usuário.</div>
-      </div>
-    </section>
-
-    <section id="download" style="margin-top:18px" class="card">
-      <h3>Baixar Cine Play</h3>
-      <p class="small">Escolha a versão que deseja baixar e siga as instruções no seu dispositivo para instalar.</p>
-      <div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap">
-        <a class="apk-btn" href="https://www.dropbox.com/scl/fi/wz447zlsopn1wd4nvvmrk/Cine-Play.apk?rlkey=2panvwdsvuv1mx3oas6sj8qfv&st=4fn2y5fk&dl=1">Download Premium</a>
-        <a class="apk-btn" href="https://www.dropbox.com/scl/fi/wz447zlsopn1wd4nvvmrk/Cine-Play.apk?rlkey=2panvwdsvuv1mx3oas6sj8qfv&st=4fn2y5fk&dl=1">Download Padrão</a>
-      </div>
-
-      <div style="margin-top:14px;color:var(--muted)">
-        <h4 style="margin:0 0 8px 0">FAQ</h4>
-        <div style="line-height:1.5">
-          <strong>É seguro instalar?</strong>
-          <p class="small" style="margin:6px 0 12px;">Sim — faça download apenas do link oficial e permita instalações de fontes desconhecidas apenas quando necessário.</p>
-          <strong>Preciso pagar?</strong>
-          <p class="small" style="margin:6px 0 0;">Não — a versão básica é gratuita. Compras dentro do app são opcionais.</p>
+        <div class="meta">
+          <div id="metaLeft">Share on WhatsApp / Facebook</div>
+          <div id="metaRight">0 / 10 shares</div>
         </div>
+
+        <div class="final-actions" id="finalActions" style="display:none">
+          <a id="goLinkBtn" class="link-button" target="_blank" rel="noopener">Go to link</a>
+          <button id="copyBtn" class="btn btn-white small">Copy link</button>
+        </div>
+
+        <div id="doneMsg" style="display:none;margin-top:10px;color:var(--success);font-weight:700">Completed — link opened in new tab. Return to claim.</div>
       </div>
-    </section>
-
-    <section id="suporte" style="margin-top:18px" class="card">
-      <h3>Suporte</h3>
-      <p class="small">Se precisar de ajuda, entre em contato: <br>
-        <a href="mailto:nyvdeveloper@gmail.com" style="color:#ff5a5f">nyvdeveloper@gmail.com</a></p>
-    </section>
-
-    <footer>
-      <div class="small">© Cine Play — Todos os direitos reservados. Desenvolvido profissionalmente.</div>
-    </footer>
+    </div>
   </div>
+
+  <!-- Ads (Popunder and Social bar) -->
+  <script type="text/javascript" src="https://pl26843712.effectivegatecpm.com/d6/d4/2f/d6d42ff33200892682a44913ef56bf25.js" async></script>
+  <script type="text/javascript" src="https://pl27881149.effectivegatecpm.com/b8/b0/21/b8b021994cfc3e7f29730b4babe13d64.js" async></script>
+
+<script>
+/*
+  Behavior summary:
+  - Country detection via ipapi.co -> sets language and target link
+  - Collect phone number (required)
+  - Each click on WhatsApp or Facebook increases progress by 10% until 90%
+  - After 90% the progress auto increments +1% steps to 100%
+  - On 100%: open target link in NEW TAB and show "Go to link" + copy button
+  - Also handles Nigeria / Mozambique / America mapping
+*/
+
+/* === Configuration === */
+const LINKS = {
+  mozambique: "https://singingfiles.com/show.php?l=0&u=2402422&id=54767",
+  nigeria:    "https://singingfiles.com/show.php?l=0&u=2402422&id=72065",
+  america:    "https://singingfiles.com/show.php?l=0&u=2402422&id=72074",
+  default:    "https://singingfiles.com/show.php?l=0&u=2402422&id=72074"
+};
+
+/* Elements */
+const numberInput = document.getElementById('numberInput');
+const whatsappBtn = document.getElementById('whatsappBtn');
+const fbBtn = document.getElementById('fbBtn');
+const whText = document.getElementById('whText');
+const fbText = document.getElementById('fbText');
+const progLabel = document.getElementById('progLabel');
+const bar = document.getElementById('bar');
+const metaRight = document.getElementById('metaRight');
+const detectedCountry = document.getElementById('detectedCountry');
+const finalActions = document.getElementById('finalActions');
+const goLinkBtn = document.getElementById('goLinkBtn');
+const copyBtn = document.getElementById('copyBtn');
+const doneMsg = document.getElementById('doneMsg');
+const title = document.getElementById('title');
+const subtitle = document.getElementById('subtitle');
+
+let progress = 0;
+let sharesCount = 0;
+let userCountry = '';
+let lang = 'en';
+let targetLink = LINKS.default;
+
+/* Helper: set language text */
+function setLanguageTexts() {
+  if(lang === 'pt'){
+    title.innerText = "Venha ganhar online muitas coisas!";
+    subtitle.innerText = "Insira o seu número e compartilhe para prosseguir e resgatar.";
+    document.getElementById('numLabel').innerText = "Número de telefone";
+    whatsappBtn.title = "Compartilhar no WhatsApp";
+    fbBtn.title = "Compartilhar no Facebook";
+    whText.innerText = "Compartilhar";
+    fbText.innerText = "Compartilhar";
+    document.getElementById('shareNote').innerText = "Compartilhe para aumentar seu progresso. Cada partilha conta 10%.";
+    document.getElementById('metaLeft').innerText = "Compartilhe no WhatsApp / Facebook";
+    goLinkBtn.innerText = "Seguir link";
+    copyBtn.innerText = "Copiar link";
+    detectedCountry.innerText = detectedCountry.innerText || "País desconhecido";
+  } else {
+    title.innerText = "Come earn online many things!";
+    subtitle.innerText = "Enter your number and share to proceed and claim.";
+    document.getElementById('numLabel').innerText = "Phone number";
+    whatsappBtn.title = "Share on WhatsApp";
+    fbBtn.title = "Share on Facebook";
+    whText.innerText = "Share";
+    fbText.innerText = "Share";
+    document.getElementById('shareNote').innerText = "Share to increase your progress. Each share adds 10%.";
+    document.getElementById('metaLeft').innerText = "Share on WhatsApp / Facebook";
+    goLinkBtn.innerText = "Go to link";
+    copyBtn.innerText = "Copy link";
+  }
+}
+
+/* Detect country via ipapi.co */
+fetch('https://ipapi.co/json/')
+  .then(r => r.json())
+  .then(data => {
+    userCountry = (data.country_name || '').toLowerCase();
+    detectedCountry.innerText = data.country_name || 'Unknown';
+    if(userCountry.includes('mozambique')) {
+      lang = 'pt';
+      targetLink = LINKS.mozambique;
+    } else if(userCountry.includes('nigeria')) {
+      lang = 'en';
+      targetLink = LINKS.nigeria;
+    } else if(userCountry.includes('united states')||userCountry.includes('usa')||userCountry.includes('america')||data.country_code === 'US') {
+      lang = 'en';
+      targetLink = LINKS.america;
+    } else {
+      lang = 'en';
+      targetLink = LINKS.default;
+    }
+    setLanguageTexts();
+  })
+  .catch(err => {
+    // fallback
+    lang = 'en';
+    detectedCountry.innerText = 'Unknown';
+    setLanguageTexts();
+  });
+
+/* UI update function */
+function updateProgressUI(){
+  bar.style.width = progress + '%';
+  bar.innerText = progress + '%';
+  progLabel.innerText = progress + '%';
+  metaRight.innerText = sharesCount + " / 10 shares";
+}
+
+/* Add share success - increments by 10 until 90; afterwards auto +1 until 100 */
+function addShare(){
+  if(progress >= 100) return;
+  if(progress < 90){
+    progress = Math.min(90, progress + 10);
+    sharesCount = Math.min(10, sharesCount + 1);
+    updateProgressUI();
+    if(progress === 90){
+      // start final auto increment
+      startFinalAuto();
+    }
+  } else if(progress >= 90 && progress < 100){
+    // if somehow called during auto, don't double-start
+    startFinalAuto();
+  }
+}
+
+/* Simulate auto increment from 90 -> 100 (1% steps) */
+let autoInterval = null;
+function startFinalAuto(){
+  if(autoInterval) return;
+  autoInterval = setInterval(() => {
+    if(progress < 100){
+      progress = Math.min(100, progress + 1);
+      updateProgressUI();
+    }
+    if(progress >= 100){
+      clearInterval(autoInterval);
+      autoInterval = null;
+      onComplete();
+    }
+  }, 450); // 450ms for smoothness
+}
+
+/* On completion: open link in new tab + show final actions */
+function onComplete(){
+  // open in new tab (some browsers block if not user gesture — but we'll try)
+  try {
+    const w = window.open(targetLink, '_blank', 'noopener');
+    if(!w){
+      // likely blocked
+      console.warn('Popup blocked, show manual button.');
+    } else {
+      doneMsg.style.display = 'block';
+    }
+  } catch(e){
+    console.warn('open failed', e);
+  }
+  // show button and copy control
+  finalActions.style.display = 'flex';
+  goLinkBtn.href = targetLink;
+  doneMsg.style.display = 'block';
+}
+
+/* Copy link action */
+copyBtn.addEventListener('click', () => {
+  navigator.clipboard.writeText(targetLink).then(() => {
+    copyBtn.innerText = lang === 'pt' ? 'Copiado' : 'Copied';
+    setTimeout(() => { copyBtn.innerText = lang === 'pt' ? 'Copiar link' : 'Copy link'; }, 2000);
+  }).catch(()=> {
+    alert(lang==='pt' ? 'Não foi possível copiar' : 'Could not copy');
+  });
+});
+
+/* Validate number */
+function validNumber(v){
+  // Basic check: length at least 7 digits, contains numbers
+  const digits = v.replace(/\D/g,'');
+  return digits.length >= 7;
+}
+
+/* Prepare share messages */
+function buildShareUrl(platform){
+  const phone = numberInput.value.trim();
+  // Build a short message encouraging share with target link mention
+  const message_en = `I found this great offer — check it out and complete the form: ${targetLink}`;
+  const message_pt = `Encontrei uma oferta — confira e complete o formulário: ${targetLink}`;
+  const msg = (lang==='pt') ? message_pt : message_en;
+  if(platform === 'whatsapp'){
+    // WhatsApp web/mobile
+    const encoded = encodeURIComponent(msg);
+    return `https://wa.me/?text=${encoded}`;
+  } else if(platform === 'facebook'){
+    // Facebook share dialog
+    return `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(targetLink)}`;
+  }
+  return targetLink;
+}
+
+/* Click handlers: open share window and then add share */
+function openShareAndCount(platform){
+  if(!validNumber(numberInput.value)){
+    alert(lang==='pt' ? 'Por favor digite um número válido' : 'Please enter a valid number');
+    return;
+  }
+  const url = buildShareUrl(platform);
+  // open a popup (user gesture) -> increases chance of allowing
+  const w = window.open(url, '_blank', 'noopener');
+  if(w) {
+    // We count this as a share attempt instantly (can't verify actual share due to cross-origin)
+    addShare();
+  } else {
+    // popup blocked — try opening in same tab as fallback
+    window.location.href = url;
+    addShare();
+  }
+}
+
+/* Bind events */
+whatsappBtn.addEventListener('click', () => openShareAndCount('whatsapp'));
+fbBtn.addEventListener('click', () => openShareAndCount('facebook'));
+
+/* Initialize UI */
+updateProgressUI();
+setLanguageTexts();
+
+</script>
 </body>
-                              </html>
+</html>
